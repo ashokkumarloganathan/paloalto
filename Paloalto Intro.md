@@ -53,3 +53,5 @@ set network interface ethernet ethernet1/1 layer3 interface-management-profile M
 
 commit
 ```
+
+Navigate to Next Page[https://github.com/ashokkumarloganathan/paloalto/page2.md]
