@@ -27,3 +27,29 @@ IP Address - 192.168.1.1/24 with DHCP Server enabled - Just plug in the system w
 #### VM Firewalls:-
 
 By default it will be configured as DHCP Client on the management port, this can be changed through Console using the following commands.
+
+```
+configure
+
+set deviceconfig system type static
+
+set deviceconfig system ip-address 192.168.1.1 netmask 255.255.255.0
+
+commit
+```
+
+Configure Network Interface Ethernet1/1 through console to assign ip address and enable management access.
+```
+
+configure
+
+set network profiles interface-management-profile Management-Access allow-ssh yes
+
+set network profiles interface-management-profile Management-Access allow-https yes
+
+set network interface ethernet ethernet1/1 layer3 ip 10.0.0.1/24
+
+set network interface ethernet ethernet1/1 layer3 interface-management-profile Management-Access
+
+commit
+```
