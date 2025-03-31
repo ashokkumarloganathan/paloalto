@@ -9,3 +9,21 @@
 ### Software:- 
 
 Supports KVM, VMWare esxi, All Major Cloud Platforms and Containers.
+
+# Accessing Paloalto Firewalls
+## Management Access through
+
+1. GUI
+2. CLI
+3. Console
+4. REST API
+
+### Default IP Address:-
+
+#### All Hardware Models :-
+
+IP Address - 192.168.1.1/24 with DHCP Server enabled - Just plug in the system which will receive the IP. then we can access the paloalto GUI or CLI.
+
+#### VM Firewalls:-
+
+By default it will be configured as DHCP Client on the management port, this can be changed through Console using the following commands.
